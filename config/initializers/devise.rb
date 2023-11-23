@@ -17,7 +17,7 @@ Devise.setup do |config|
   # config.secret_key = 'd1ba2a54cb7c03edb0dd220a4530bab95c63c196a3d1448324cb34155c02a09482a0dd89cdcad1dfe052727752fe9d0c8acd9b9ba7d426eab1bb9e859e11c5ea'
 
   config.jwt do |jwt|
-    jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
+    jwt_secret_key = Rails.application.credentials.devise[:jwt_secret_key]
   end
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
